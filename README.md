@@ -16,7 +16,7 @@ https://github.com/wvchallenges/se-challenge-payroll
 
 * If multiple reports are imported the cumulative data will be displayed at the index / root page. 
 
-# A paragraph or two about what you are particularly proud of in your implementation, and why.
+# A paragraph about implementation
 
 I believe this is a simple yet well structured solution to the challenge presented given the time frame and purpose of the exercise. With seperate models for Reports, TimeSheets & Employees, I believe it establishes a solid foundation which could support development going forward. 
 
