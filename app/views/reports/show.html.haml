@@ -1,0 +1,6 @@
+= button_to 'Full Payroll Listing', reports_path, method: :get, style: "margin: 10px 0px;"
+= button_to 'Upload New Time Report', new_report_path, method: :get, style: "margin: 10px 0px;"
+
+%h2 Pay Period Report #{@report_id}
+
+= render 'payroll_report'

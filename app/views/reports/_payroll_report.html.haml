@@ -1,0 +1,16 @@
+- if @payment_info.blank?
+  %h4 No Pay Period report available.
+- else
+  %table{border: "2"}
+    %thead
+      %tr
+        %th Employee ID
+        %th Pay Period
+        %th Amount Paid
+    %tbody
+      - @payment_info.each do |emp, period|
+        - period.sort_by {|k, v| k.split(" ")[0].to_datetime}.each do |period_date, amount|
+          %tr
+            %td{width: "100px"}= emp
+            %td{style: "width: 200px; text-align: center;"}= period_date
+            %td{width: "100px"}= number_to_currency(amount)

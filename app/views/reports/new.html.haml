@@ -1,0 +1,5 @@
+%h2.export-button
+  %strong Import Time Report
+= form_tag reports_path, multipart: true do
+  = file_field_tag :file
+  = submit_tag "Import"
