@@ -1,24 +1,35 @@
-# README
+# Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://github.com/wvchallenges/se-challenge-payroll
 
-Things you may want to cover:
+# Instructions
 
-* Ruby version
+* Clone the https://github.com/pf90/se-challenge-payroll and run `bundle install`.
 
-* System dependencies
+* Setup the database with `bundle exec rake db:migrate`.
 
-* Configuration
+* Start the server with `rails s`.
 
-* Database creation
+* On the root page click `Upload new Time Report` button. Select your file and click `import`.
 
-* Database initialization
+* Once sucessfully imported, this will bring you to the show page with the specific detail for that report. 
 
-* How to run the test suite
+* If multiple reports are imported the cumulative data will be displayed at the index / root page. 
 
-* Services (job queues, cache servers, search engines, etc.)
+# A paragraph or two about what you are particularly proud of in your implementation, and why.
 
-* Deployment instructions
+I believe this is a simple yet well structured solution to the challenge presented given the time frame and purpose of the exercise. With seperate models for Reports, TimeSheets & Employees, I believe it establishes a solid foundation which could support development going forward. 
 
-* ...
+The Report model is responsible for importing the report detail & individual time sheet data, while the Employee model is responsible for returning the cumulative pay per employee per pay period. 
+
+While I am quite satisfied with the solution, I do acknowledge its shortcomings in terms of 
+
+* Testing 
+
+* Design & UI
+
+* Hard coding Job rates & ability to support further companies on the same platform
+
+* Improved features in terms of sorting data within payroll reports. 
+
+These among others are items I would rectify going forward. 
