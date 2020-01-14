@@ -1,7 +1,6 @@
 class Employee < ApplicationRecord
   has_many :time_sheets
 
-  # returns a nested hash structure
   def self.calculate_pay(report_id=nil)
     pay_data = {}
     self.all.each do |emp|
